@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/popup.css" />
+    <link rel="stylesheet" href="/styles/basket.css" />
+    <title>KlefMW - Официальный дилер BMW | Новосибирск</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav__list">
+          <li>
+            <div class="nav__item cars">
+              <img src="../img/cars.svg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="nav__item search">
+              <img src="../img/search.svg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="nav__item account">
+              <img src="../img/account.svg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="nav__item korzina">
+              <img src="../img/korzina.svg" alt="" />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container__sorting container">
+        <div class="sorting">
+          <h5 class="sorting__title">Сортировка:</h5>
+          <div class="sorting__button">
+            <button id="btn-price" class="sort__button">По цене</button>
+            <button id="btn-popular" class="sort__button">
+              По популярности
+            </button>
+            <button id="btn-rating" class="sort__button">По рейтингу</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <input type="checkbox" id="modal" />
+        <div class="popup"></div>
+      </div>
+
+      <div class="basket__wrapper container">
+        <div class="product__wrapper"></div>
+
+        <div class="payment">
+          <p>Оплата заказа</p>
+          <div class="payment__content">
+            <div class="payment__result">
+              <div class="result__counter">
+                <span>Итого:</span>
+                <div class="result__horizontal">
+                  <span>1</span>
+                  <span>Товар</span>
+                </div>
+              </div>
+            </div>
+            <div class="result__final-price">10 000 000р</div>
+          </div>
+          <button class="btn__pay"><span>Оформить заказ</span></button>
+        </div>
+      </div>
+    </main>
+    <script src="/scripts/view.js"></script>
+    <script src="/scripts/cars.js"></script>
+    <script src="/scripts/sorting.js"></script>
+    <script src="/scripts/modal.js"></script>
+    <script src="/scripts/basket.js"></script>
+  </body>
+</html>
