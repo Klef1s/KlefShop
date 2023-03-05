@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/test.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>KlefMW - Официальный дилер BMW | Новосибирск</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav__list">
+          <li>
+            <div class="nav__item cars">
+              <img src="../img/cars.svg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="nav__item search">
+              <img src="../img/search.svg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="nav__item account">
+              <img src="../img/account.svg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="nav__item korzina">
+              <img src="../img/korzina.svg" alt="" />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container__sorting container">
+        <div class="sorting">
+          <h5 class="sorting__title">Сортировка:</h5>
+          <div class="sorting__button">
+            <button id="btn-price" class="sort__button">По цене</button>
+            <button id="btn-popular" class="sort__button">
+              По популярности
+            </button>
+            <button id="btn-rating" class="sort__button">По рейтингу</button>
+          </div>
+        </div>
+      </div>
+      <div class="container__filter container">
+        <div class="filter">
+          <h5 class="filter__title">Фильтры:</h5>
+          <div class="filter__buttons">
+            <button data-filter="all" class="filter__button">Все</button>
+            <button data-filter="smartphone" class="filter__button">
+              Смартофны
+            </button>
+            <button data-filter="laptops" class="filter__button">
+              Ноутбуки
+            </button>
+            <button data-filter="fragrances" class="filter__button">
+              Парфюмы
+            </button>
+            <button data-filter="skincare" class="filter__button">
+              Уход за кожей
+            </button>
+            <button data-filter="groceries" class="filter__button">
+              Продукты
+            </button>
+            <button data-filter="home-decoration" class="filter__button">
+              Украшения для дома
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/scripts/modal.js"></script>
+  </body>
+</html>
